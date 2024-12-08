@@ -1,0 +1,122 @@
+body {
+    background: linear-gradient(45deg, #00bcd4, #8bc34a);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+#weather-container {
+    background: #ffffff;
+    max-width: 420px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 2px solid #009688;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border-color: #00bcd4;
+}
+
+button {
+    background: #ff5722;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #e64a19;
+}
+
+#temp-div p {
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333;
+}
+
+#weather-info {
+    font-size: 18px;
+    color: #555;
+    margin-top: 15px;
+}
+
+#weather-icon {
+    width: 120px;
+    height: 120px;
+    margin: 20px auto;
+    transition: opacity 0.3s ease;
+}
+
+#weather-icon.hidden {
+    opacity: 0;
+}
+
+#hourly-forecast {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hourly-item {
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.hourly-item:hover {
+    transform: translateY(-5px);
+}
+
+.hourly-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px;
+}
+
+#hourly-heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
